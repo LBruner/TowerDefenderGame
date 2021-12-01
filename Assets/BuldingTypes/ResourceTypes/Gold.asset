@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e71060c9d38dec841808b5ca8f472041, type: 3}
-  m_Name: BuldingTypesList
+  m_Script: {fileID: 11500000, guid: df77cb54c84154b408f4a204661042c4, type: 3}
+  m_Name: Gold
   m_EditorClassIdentifier: 
-  buldingTypes: []
+  nameString: Gold
