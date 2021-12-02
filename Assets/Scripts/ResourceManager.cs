@@ -20,7 +20,6 @@ public class ResourceManager : MonoBehaviour
         {
             resourceAmountDictionary.Add(resourceType, 0);
         }
-        TestLogResources();
     }
 
     private void Update()

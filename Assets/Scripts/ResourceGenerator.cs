@@ -19,7 +19,13 @@ public class ResourceGenerator : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0f)
         {
-            ResourceManager.Instance.AddResource(buildingtype.resourceGeneratorData.resourceType, 1);
+            Debug.Log("M");
+            foreach (var resourceType in buildingtype.resourceGeneratorData.resourceType)
+            {
+                Debug.Log("OI");
+                ResourceManager.Instance.AddResource(resourceType, 1);
+            }
+
             timer += timerMax;
         }
     }
