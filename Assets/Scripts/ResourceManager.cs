@@ -1,10 +1,12 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ResourceManager : MonoBehaviour
 {
     public static ResourceManager Instance { get; private set; }
+    public Action onResourceUpdated;
 
     private Dictionary<ResourceTypeSO, int> resourceAmountDictionary;
 
@@ -29,19 +31,17 @@ public class ResourceManager : MonoBehaviour
             ResourceTypeListSO resourceTypeList = Resources.Load<ResourceTypeListSO>(typeof(ResourceTypeListSO).Name);
             AddResource(resourceTypeList.list[0], 5);
         }
-        TestLogResources();
-    }
-
-    private void TestLogResources()
-    {
-        foreach (KeyValuePair<ResourceTypeSO, int> resourceType in resourceAmountDictionary)
-        {
-            Debug.Log(resourceType.Key + ": " + resourceType.Value);
-        }
     }
 
     public void AddResource(ResourceTypeSO type, int amount)
     {
         resourceAmountDictionary[type] += amount;
+
+        onResourceUpdated?.Invoke();
+    }
+
+    public int GetResourceAmount(ResourceTypeSO resourceType)
+    {
+        return resourceAmountDictionary[resourceType];
     }
 }
