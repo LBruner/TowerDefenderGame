@@ -22,7 +22,6 @@ public class ResourceGenerator : MonoBehaviour
             Debug.Log("M");
             foreach (var resourceType in buildingtype.resourceGeneratorData.resourceType)
             {
-                Debug.Log("OI");
                 ResourceManager.Instance.AddResource(resourceType, 1);
             }
 
