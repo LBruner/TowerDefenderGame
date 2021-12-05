@@ -56,7 +56,7 @@ public class BuldingTypeSelectUI : MonoBehaviour
 
     private void Update()
     {
-        UpdateActiveBuldingButton();
+        BuildingManager.Instance.onBuldingSelected += UpdateActiveBuldingButton;
     }
 
     private void UpdateActiveBuldingButton()
