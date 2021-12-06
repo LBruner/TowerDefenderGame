@@ -9,6 +9,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UtilsClass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpriteSortingOrder.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21sj4eh9qLH6RC8rcFhDmkixr8D" />
   <component name="ProjectViewState">
@@ -52,10 +53,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638736501068</updated>
-      <workItem from="1638736519437" duration="1692000" />
+      <workItem from="1638736519437" duration="3036000" />
+      <workItem from="1638826688570" duration="2758000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
